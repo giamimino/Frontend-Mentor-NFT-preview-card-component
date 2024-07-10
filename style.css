@@ -1,0 +1,136 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 250px;
+    height: 432px;
+    background-color: hsl(216, 50%, 16%);
+    margin-top: 75px;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.img {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.img:hover + .hover {
+    display: flex;
+}
+
+.title {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.info {
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    pointer-events: none;
+}
+
+.noname {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    pointer-events: none;
+}
+
+.ETH {
+    font-weight: 600;
+    font-size: 13px;
+    color: hsl(178, 100%, 50%);
+    margin-left: 5px;
+}
+
+.date {
+    margin-left: 4px;
+    font-size: 13px;
+}
+
+.clock {
+    margin-top: 2px;
+    margin-left: 65px;
+    font-size: 13px;
+}
+
+hr {
+    height: 2px;
+    margin-bottom: 12px;
+}
+
+.user {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.person {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.Creation {
+    color: hsl(215, 51%, 70%);
+    pointer-events: none;
+}
+
+.name {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.hover {
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.4);
+    width: 226px;
+    height: 226px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 87px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s;
+}
